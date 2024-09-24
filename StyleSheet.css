@@ -173,6 +173,14 @@ html{
                               background-color: #eebbdd;
                             }
 
+                            .right{
+                              position: absolute;
+                              bottom: .5rem;
+                              left: 75%;
+                              padding: .5rem;
+                            }
+                      
+
                             button a {
                               color: #000;
                               text-decoration: none;
@@ -219,6 +227,7 @@ html{
                       border: 2px solid black;
                       height: 13rem;
                     }
+                    
 
                     
  
