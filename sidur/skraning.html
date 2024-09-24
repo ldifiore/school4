@@ -1,126 +1,192 @@
 <!DOCTYPE html>
-<html lang="Island">
+<html lang="is">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../StyleSheet.css">
-    <title>Skráning á viðburði</title>
+    <head>
+        <link rel="stylesheet" href="../StyleSheet.css">
+        <meta charset="UTF-8">
+        <title>Spilabúðin</title>
+        <meta name="description"
+            content="Spilabúðin selur spil, heldur viðburði og býður upp á skemmtilega stund. Kíktu á okkur á Spilagötu 1.">
+        <meta property="og:title" content="Spilabúðin">
+        <meta property="og:description"
+            content="Spilabúðin selur spil, heldur viðburði og býður upp á skemmtilega stund. Kíktu á okkur á Spilagötu 1.">
+        <meta property="og:image" content="/myndir/sharing.jpg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
-    
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <h1>Spilabúðin-Skráning á viðburði</h1>
-    </header>
+    <body>
 
-    <div class="wrapper-content">
-        <p class="sr-only"><a href="#efni">Beint í efni</a></p>
-        <aside>
+
+        <header>
+            <h1>Spilabúðin-Viðburðir</h1>
+        </header>
+
+        <main class="content">
+            
+
             <nav>
                 <ul>
                     <li><a href="../index.html">Forsíða</a></li>
                     <li><a href="spil.html">Spil</a></li>
                     <li><a href="vidburdir.html">Viðburðir</a></li>
-                    <li><strong>Skráning á viðburði</strong></li>
+                    <li><strong>Skráning</strong></li>
                 </ul>
             </nav>
-        </aside>
-    
-        <main id="efni">
+
             <div class="content">
-                <form>
-                    <div>
-                        <p>
-                            Skraou pig a vioburdi hja okkur!
-                        </p>
-                        <p>
-                            <div style="display:inline-flex;">
-                                <div><strong>Viðburður</strong>
-                                    <div style="border:solid 1px black;">
-                                        <label>Hvada viðburð viltu koma á?</label></br>
-                                        <select><option>Puslukvoid</option></select></br>
-                                        <label>Hvenaer viltu koma?</label></br>
-                                        <input type="date"/></br>
-                                        <label>Klukkan hvao?</label></br>
-                                        <select><option>10:00-11:00</option></select></br>
-                                        <label>Hve morg?</label></br>
-                                        <select><option>1</option></select></br>
-                                        <label>Hvada viðburð viltu koma á?</label></br>
-                                        <textarea></textarea></br>
-                                    </div>
-                                </div>
-                                <div><strong>Panta mat</strong>
-                                    <div style="border:solid 1px black;">
-                                        <label>Nafn</label></br>
-                                        <input type="text"/></br>
-                                        <label>Netfang</label></br>
-                                        <input type="text" placeholder="nafn@example.org"/></br>
-                                        <label>Simi</label></br>
-                                        <input type="text" placeholder="345-6789"/></br>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="display:inline-flex;">
-                                <div><strong>Pinar upplysingar</strong>
-                                    <div style="border:solid 1px black;">
-                                        <label>Nafn</label></br>
-                                         <select><option>Pizzusneid og gos</option></select></br>
-                                        <input type="checkbox"/><label>Ofnaemi sem vid eigum ad vita?</label></br>
-                                        <label>Annad sem vid eigum ad vita?</label></br>
-                                        <textarea></textarea></br>
-                                    </div>
-                                </div>
-                                <div><strong>Sampykkja og panta</strong>
-                                    <div style="border:solid 1px black;">
-                                        <input type="checkbox"/><label>Eg sampykki skilmala Spilabudarinnar</label></br></br></br></br></br>
-                                        <button>Panta</button></br>
-                                    </div>
-                                </div>
+
+
+                <div class="first-content">
+                    <p>
+                        Skraou pig a vioburdi hja okkur!
+                    </p>
+                </div>
+
+                <div class="Second-content">
+                    <form action="">
+
+                        <div class="form-card">
+                            <h3>Hvada viðburð viltu koma á?</h3>
+                            <div class="form-data-top">
+                                <label>Hvada viðburð viltu koma á?</label><br>
+                                <select>
+                                    <option>Puslukvoid</option>
+                                    <option>Ticket to Ride</option>
+                                </select></br>
+                                <label>Hvenaer viltu koma?</label></br>
+                                <input type="date" /></br>
+                                <label>Klukkan hvao?</label></br>
+                                <select>
+                                    <option>10:00-11:00</option>
+                                    <option>11:00-12:00</option>
+                                    <option>12:00-13:00</option>
+                                    <option>13:00-14:00</option>
+                                    <option>14:00-15:00</option>
+                                    <option>15:00-16:00</option>
+                                    <option>16:00-17:00</option>
+                                    <option>17:00-18:00</option>
+                                    <option>18:00-19:00</option>
+                                    <option>19:00-20:00</option>
+                                    <option>20:00-21:00</option>
+                                    <option>21:00-22:00</option>
+                                    <option>22:00-23:00</option>
+                                    <option>23:00-00:00</option>
+
+                                </select></br>
+                                <label>Hve morg?</label></br>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select></br>
+                                <label>Hvada viðburð viltu koma á?</label></br>
+                                <textarea></textarea></br>
                             </div>
                         </div>
-                    </p>
-                </form>
+
+                        <div class="form-card">
+                            <h3>Hvada viðburð viltu koma á?</h3>
+
+                            <div class="form-data-top">
+                                <label>Nafn</label></br>
+                                    <select>
+                                        <option>Pizzusneid og gos</option>
+                                        <option>Kaffi og kaka</option>
+                                        <option>Engan mat</option>
+                                    </select></br>
+                                    <input type="checkbox" /><label>Ofnaemi sem vid eigum ad vita?</label></br>
+                                    <label>Annad sem vid eigum ad vita?</label></br>
+                                    <textarea></textarea></br>
+                            </div>
+                        </div>
+
+                        <div class="form-card">
+                            <h3>Hvada viðburð viltu koma á?</h3>
+
+                            <div class="form-data-bottom">
+                                <label>Nafn</label></br>
+                                    <input type="text" /></br>
+                                    <label>Netfang</label></br>
+                                    <input type="text" placeholder="nafn@example.org" /></br>
+                                    <label>Simi</label></br>
+                                    <input type="text" placeholder="345-6789" /></br>
+                            </div>
+                        </div>
+
+                        <div class="form-card">
+                            <h3>Hvada viðburð viltu koma á?</h3>
+                            <div class="form-data-bottom">
+                                <input type="checkbox"/>
+                                <label>Eg sampykki skilmala Spilabudarinnar</label>
+                                <button>Panta</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
             </div>
+
         </main>
-        <aside>
-            <nav></nav>
-        </aside>
-    </div>
-    
-    <footer>
-        <section>
-            <h2>Opnunartími</h2>
-            <dl>
-                <dt>Mánudagar</dt><dd>Lokað</dd>
-                <dt>Þriðjudagar til fimmtudags</dt><dd>14:00–22:00</dd>
-                <dt>Föstudaga</dt><dd>14:00–00:00</dd>
-                <dt>Laugardaga</dt><dd>12:00–00:00</dd>
-                <dt>Sunnudaga</dt><dd>12:00–22:00</dd>
-            </dl>
-        </section>
-        <section>
-            <h2>Hér erum við</h2>
-            <p>
-                Spilabúðin ehf.</br>
-                Spilgata 1</br>
-                101 Reykjavík</br>
-                Sími 123-4567</br>
-                <a href="spilabudin@example.org">spilabudin@example.org</a>
-            </p>
-        </section>
-        <section>
-            <h2>Samfélagsmiðlar</h2>
-            <p>
-                <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></br>
-                <a href="https://www.youtube.com/user/HIvarp">YouTube</a></br>
-                <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
-            </p>
-        </section>
-    </footer>
-</body>
+
+
+
+        <footer>
+
+
+            <section>
+                <h4>Opnunartími</h4>
+                <dl>
+                    <dt>Mánudagar</dt>
+                    <dd>Lokað</dd>
+                    <dt>Þriðjudagar til fimmtudags</dt>
+                    <dd>14:00–22:00</dd>
+                    <dt>Föstudaga</dt>
+                    <dd>14:00–00:00</dd>
+                    <dt>Laugardaga</dt>
+                    <dd>12:00–00:00</dd>
+                    <dt>Sunnudaga</dt>
+                    <dd>12:00–22:00</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h4>Hér erum við</h4>
+                <ul>
+                    <li>Spilabúðin ehf.</li>
+                    <li>Spilgata 1</li>
+                    <li>101 Reykjavík</li>
+                    <li>Sími 123-4567</li>
+                    <li><a href="spilabudin@example.org">spilabudin@example.org</a></li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h4>Samfélagsmiðlar</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/user/HIvarp">YouTube</a></li>
+                    <li><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></li>
+                </ul>
+            </section>
+
+            
+        </footer>
+
+
+    </body>
+
+
 </html>
