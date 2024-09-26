@@ -2,7 +2,7 @@
 <html lang="is">
 
     <head>
-        <link rel="stylesheet" href="../StyleSheet.css">
+        <link rel="stylesheet" href="../styles.css">
         <meta charset="UTF-8">
         <title>Spilabúðin</title>
         <meta name="description"
@@ -18,72 +18,67 @@
     </head>
 
     <body>
-
-
         <header>
             <h1>Spilabúðin-Viðburðir</h1>
         </header>
-
-        <main class="content">
-            
-
+        <main>
             <nav>
-                <ul>
-                    <li><a href="../index.html">Forsíða</a></li>
-                    <li><a href="spil.html">Spil</a></li>
-                    <li><strong>Viðburðir</strong></li>
-                    <li><a href="skraning.html">Skráning</a></li>
-                </ul>
+                <a href="../index.html">Forsíða</a>
+                <a href="spil.html">Spil</a>
+                <strong>Viðburðir</strong>
+                <a href="skraning.html">Skráning á viðburði</a>
             </nav>
-
             <div class="content">
+    
 
-                <div class="Second-content">
-                    <div class="row-of-two" id="with-image-button"></div>
-
-                        
-                        <div class="card">
-                            <div class="image">
-                                <img src="../myndir/puzzle.jpg" alt="" width="200">
+    
+                <div class="row-content">
+                    <div class="card" id="card-with-image">
+                        <img class="card-image" src="../myndir/puzzle.jpg" alt="" width="100%" height="200">
+                        <div class="card-text">
+                            <h3>Púslukvöld</h3>
+                            <br>
+                            <p>
+                                Komdu á púslukvöld í spilabúðina. Við bjóðum upp
+                                á púsluspil og góða stemningu. Byrjum snemma og
+                                endum seint. Allt frá 50 bitum upp í 5000 bita púsl.
+                            </p>
+                            <br>
+                            <div class="card-buttons">
+                                
+                                    <a class="button" href="../sidur/skraning.html">Skrá á mig á púslukvöld</a>
+                                
                             </div>
-                            <h3>Spil</h3>
-                            <p>Komdu á púslukvöld í spilabúðina. Við bjóðum upp
-                            á púsluspil og góða stemningu. Byrjum snemma og
-                            endum seint. Allt frá 50 bitum upp í 5000 bita púsl.</p>
-                            <button>
-                            <a href="./sidur/spil.html"> Skoðaðu spilaúrvalið</a>
-                            </button>
                         </div>
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../myndir/ticket-to-ride.jpg" alt="" width="200">
+                    </div>
+                    <div class="card" id="card-with-image">
+                        <img class="card-image" src="../myndir/ticket-to-ride.jpg" alt="" width="100%" height="200">
+                        <div class="card-text">
+                            <h3>Ticket to Ride</h3>
+                            <br>
+                            <p>
+                                Elskar þú lestir og leiki? Komdu á Ticket to Ride viðburð í spilabúðina. Spilum allan daginn, bókaðu klukkustund eða lengur.
+                            </p>
+                            <br>
+                            <div class="card-buttons">
+                                
+                                    <a class="button" href="">Skrá á mig á Ticket to Ride</a>
+                                
                             </div>
-                            <h3>Spil</h3>
-                            <p>Elskar þú lestir og leiki? Komdu á Ticket to Ride
-                            viðburð í spilabúðina. Spilum allan daginn, bókaðu
-                            klukkustund eða lengur.</p>
-                            <button>
-                            <a href="./sidur/spil.html"> Skoðaðu spilaúrvalið</a>
-                            </button>
                         </div>
+                    </div>
                 </div>
 
-                <div class="first-content"></div>
 
+
+                <div class="link-content">
+                    <a href="../index.html">Aftur á forsíða</a>
                 </div>
-
-
             </div>
-
+            
         </main>
-
-
-
         <footer>
-
-
-            <section>
+            <div class="info-footer">
                 <h4>Opnunartími</h4>
                 <dl>
                     <dt>Mánudagar</dt>
@@ -97,9 +92,8 @@
                     <dt>Sunnudaga</dt>
                     <dd>12:00–22:00</dd>
                 </dl>
-            </section>
-
-            <section>
+            </div>
+            <div class="info-footer">
                 <h4>Hér erum við</h4>
                 <ul>
                     <li>Spilabúðin ehf.</li>
@@ -107,24 +101,17 @@
                     <li>101 Reykjavík</li>
                     <li>Sími 123-4567</li>
                     <li><a href="spilabudin@example.org">spilabudin@example.org</a></li>
-
                 </ul>
-            </section>
-
-            <section>
+            </div>
+            <div class="info-footer">
                 <h4>Samfélagsmiðlar</h4>
                 <ul>
                     <li><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></li>
                     <li><a href="https://www.youtube.com/user/HIvarp">YouTube</a></li>
                     <li><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></li>
                 </ul>
-            </section>
-
+            </div>
             
         </footer>
-
-
-    </body>
-
-
-</html>
+      </body>
+    </html>
