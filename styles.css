@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-base) ;
+} 
+
+.sr-only:not(:focus):not(:active) {
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+height: 1px;
+overflow: hidden;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+}
+
+:root{
+--font-size-base: 16px;
+--font-size-headings: 1.5rem;
+
+--spacing: 1rem;
+
+--max-width: 1200px;
+--min-width-image: 200px;
+--max-width-image: 300px;
+--max-width-footer-section: 250px;
+
+--border-width: 1px;
+--border-radius-regular: 5px;
+--border-radius-image: 10px;
+--border-regular: 1px solid #000;
+
+--color-yellow: #f3dd99;
+--color-white: #ffffff;
+--color-purple: #eebbdd;
+--color-purple-dark: #cc99bb;
+
+--color-background-primary: var(--color-yellow);
+--color-background-secondary: var(--color-purple);
+--color-background-form: var(--color-white);
+--color-border-with-background: var(--color-purple-dark);
+
+--font-base-size: 1rem;
+--font-family-base: 'Open Sans', Arial, Helvetica, sans-serif;
+
+}
+
+    
+
+body{
+    width: 100%;
+    max-height: 100%;
+    background:  var(--color-background-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+    header{
+        min-width: 100%;
+        background-color: var(--color-background-secondary);
+        padding: 2rem;
+        border-bottom: 4px solid var(--color-purple-dark);
+        text-align: center;
+    }
+
+    main{
+        max-width: var(--max-width);
+        background-color: var(--color-background-primary);
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+        #skraning{
+            width: 100%;
+        }
+
+        nav{
+            flex:1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+            
+            nav a{
+                color: black ;
+                text-align: left;
+            }
+
+        .content{
+            flex:7;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+            .description-content{
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+
+                #description-paragraph{
+                    flex: 9;
+                }
+
+                #spilabudin{
+                    max-width: var(--max-width-image);
+                    max-height: 200px;
+                }
+
+            .row-content{
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+            }
+
+                .card{
+                    flex:1;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+
+                .card-with-image{
+                    flex:1;
+                
+                }
+
+                #card-with-image{
+                    border: none;
+                
+                }
+
+                    .card-buttons{
+                        padding: 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                        .button{
+                            padding: .5rem;
+                            border-radius: 5px;
+                            background-color: var(--color-background-secondary);
+                            margin-top: 1rem;
+                            text-decoration: none;
+                            color: #000;
+                            border: 1px solid black;
+                        }
+
+
+                    .card-text{
+                        padding: 10px;
+                        border-left: 1px solid black;
+                        border-bottom: 1px solid black;
+                        border-right: 1px solid black;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+
+                    .card-image{
+                        border-radius: 5px 5px 0px 0px;
+                    }
+
+            .game-table{
+                border-spacing: 0;
+                padding: 1rem 2rem 5rem 1rem;
+            }
+
+            table tbody tr:nth-child(2n + 1) {
+                background-color: var(--color-background-secondary);
+            }
+
+                table td{
+                    padding: .5rem 1rem;
+                }
+
+                table a{
+                    width: 200px;
+                }
+
+
+
+            .title-content{
+                text-align: center;
+            }
+
+            .link-content{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .form-card{
+                flex: 1;
+            }
+
+    footer{
+        width: 100%;
+        background-color: var(--color-background-secondary);
+        border-top: 4px solid var(--color-purple-dark);
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+        .info-footer{
+            width:200px;
+            height: 300px;
+            text-align: center;
+        }
+
+        footer ul{
+            list-style: none;
+        }
+
+
+    @media screen and (max-width: 750px){
+        main{
+            flex-direction: column;
+        }
+        nav{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
+
+    @media screen and (max-width: 450px){
+        footer{
+            flex-direction: column;
+        }
+
+    }
+
+    @media screen and (max-width: 320px){
+        .description-content{
+            flex-direction: column;
+        }
+        .row-content{
+            flex-direction: column;
+        }
+
+    }
+
+h1,h2,h3,h4{
+    font-family: 'Matemasie';
+}
+
+a{
+    color: #000;
+}
+
+input,select,textarea{
+    margin: .2rem;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    width: 100%;
+  }
