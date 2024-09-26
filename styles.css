@@ -49,7 +49,9 @@ width: 1px;
 
 }
 
-    
+html{
+    background-color: var(--color-background-primary);
+} 
 
 body{
     width: 100%;
@@ -59,7 +61,15 @@ body{
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    animation: fade-in 600ms ;
+
 }
+
+@keyframes fade-in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
 
     header{
         min-width: 100%;
@@ -138,7 +148,12 @@ body{
                 
                 }
 
-                #card-with-image{
+                #card-with-image1{
+                    border: none;
+                
+                }
+
+                #card-with-image2{
                     border: none;
                 
                 }
@@ -160,6 +175,13 @@ body{
                             border: 1px solid black;
                         }
 
+                            .button:hover{
+                                transition: 600ms ease-in-out;
+                                background-color: #000;
+                                color:#ffffff;
+                                border: 1px solid #ffffff;
+                            }
+
 
                     .card-text{
                         padding: 10px;
@@ -172,6 +194,8 @@ body{
 
                     .card-image{
                         border-radius: 5px 5px 0px 0px;
+                        height: 200px;
+                        width: 100%;
                     }
 
             .game-table{
@@ -261,6 +285,10 @@ body{
 
 h1,h2,h3,h4{
     font-family: 'Matemasie';
+}
+
+h4{
+    font-size: 1.3rem;
 }
 
 a{
